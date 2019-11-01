@@ -1,0 +1,332 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 74%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.title h2{
+    margin-top: 0px;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.title::after{
+    content: '';
+    width: 75px;
+    height: 4px;
+    background: #e8491d;
+    margin: auto;
+    display: block;
+    transform: translateY(-25px);
+}
+
+.highlight{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+    /* header */
+header{
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 90px;
+    border-bottom: 4px solid #e8491d;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px 0 15px;
+    margin-left: 15px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 5px;
+}
+
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    border-bottom: 1px solid #e8491d;
+    color: #f2f2f2;
+}
+
+    /* Gambar Background */
+#background{
+    min-height: 433px;
+    background: url('../img/Sekolah\ Kita.jpg') no-repeat 0 -150px;
+    background-size: cover;
+    border-bottom: #e8491d 4px solid;
+}
+
+/* Visi Misi */
+
+#visimisi {
+    width: 80%;
+    margin: auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-top: -120px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+#visimisi .title h2{
+    padding-top: 10px;
+    margin-left: -2px;
+}
+
+#visimisi .title::after{
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #e8491d;
+    margin: auto;
+    display: block;
+    transform: translateY(-25px);
+}
+
+#visimisi .newsletter h3{
+    margin-top: -5px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#visimisi .newsletter p{
+    font-style: italic;
+    margin-left: 30px;
+    margin-top: -20px;
+    font-size: 18px;
+}
+#visimisi .newsletter ol{
+    font-style: italic;
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+/* KOnten */
+
+#konten {
+    padding: 120px 0;
+    font-weight: bold;
+}
+
+#konten .profil {
+    float: left;
+    margin: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+    overflow: hidden;
+    width: 225px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+#konten .profil img{
+    float: left;
+}
+
+#konten .quotes{
+    font-style: italic;
+    margin-top: 32px;
+    text-align: left;
+    font-size: 18px;
+}
+
+#konten .quotes p.sign{
+    font-style: italic;
+    margin-top: 50px;
+    text-align: right;
+}
+
+#konten .prestasi{
+    width: 400px;
+    float: left;
+    margin-top: 110px;
+}
+
+#konten .prestasi p.trophy{
+    margin-bottom: 20px;
+}
+
+#konten .illustrasi img{
+    margin-top: 70px;
+    margin-left: 10px;
+    width: 550px;
+}
+
+#konten a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+#konten a.tombol{
+    border: 0 solid;
+    border-radius: 20px;
+    background: #e8491d;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#konten a.tombol:hover{
+    color: #e8491d;
+    background: #35424a;
+}
+
+#konten a.tombol:active{
+    color: white;
+    box-shadow: none;
+}
+
+/* ABOUT */
+
+#about {
+    padding: 50px 0;
+}
+
+#about .col{
+    float: left;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+#about .col img{
+    width: 100px;
+}
+
+#about .col ul{
+    text-align: left;
+    /* margin-left: px; */
+}
+/* foto gallery */
+
+
+#gallery{
+    padding: 50px;
+}
+#gallery .title h2{
+    margin-top: 35px;
+}
+
+#gallery .wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1 1 1" 250px "1 1 1" 250px "1 1 1" 250px;
+    grid-gap: 5px;
+}
+
+#gallery .wrap .box{
+    background-color: #f2f2f2;
+}
+#gallery .wrap .box img{
+    width: 100%;
+    object-fit: cover;
+}
+#gallery .wrap .box.a,
+#gallery .wrap .box.f{
+    grid-column: span  2;
+}
+#gallery .wrap .box.b{
+    grid-row: span  2;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    border-top: 4px solid #e8491d;
+}
+
+footer #branding{
+    float: left;
+}
+
+footer #branding img{
+    margin-top: 39px;
+    margin-right: 50px;
+}
+
+footer h1.text{
+    margin-top: 90px;
+    float: left;
+}
+footer .contact{
+    float : right;
+}
+footer .contact ul{
+    list-style: none;
+    margin-bottom: 25px;
+}
+footer .contact li img{
+    float: left;
+    margin-right: 10px;
+}
+
+footer .contact li img[src="img/icon/telp.png"]{
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+footer .contact .title h2{
+    font-size: 18px;
+}
+
+footer .contact .title::after{
+    width: 68px;
+    transform: translateY(-10px);
+}
+
+#copyright{
+    margin-top: -24px;
+    height: 53px;
+    text-align: center;
+    font-size: 16px;
+    background: #e8491d;
+    text-transform: capitalize;
+}
+
+#copyright .text-copyright h4{
+    color: white;
+    padding-top: 10px;
+}
